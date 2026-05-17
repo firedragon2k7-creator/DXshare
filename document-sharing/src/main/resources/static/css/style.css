@@ -204,3 +204,38 @@ body { background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); font-famil
 }
 .btn-upload-submit:hover { transform: translateY(-5px); filter: brightness(1.15); }
 
+.search-input-group {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-right: 15px; /* Khoảng cách với nút upload */
+}
+
+.search-input-group i {
+    color: var(--vku-navy); /* Màu xanh Navy thương hiệu */
+    font-size: 1.3rem; /* Icon lớn hơn */
+    margin-right: 15px;
+    opacity: 0.8; /* Hơi mờ nhẹ */
+}
+
+.search-input-group input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none; /* Bỏ viền focus mặc định */
+    font-size: 1rem;
+    color: var(--vku-blue-dark); /* Màu chữ xanh đậm */
+    font-weight: 500;
+    padding: 5px 0; /* Tăng padding dọc */
+}
+
+.search-input-group input::placeholder {
+    color: #888; /* Màu placeholder xám */
+    font-weight: 400;
+}
+
+.search-input-group input:focus {
+    color: var(--vku-blue-dark); /* Màu chữ đậm hơn khi focus */
+    font-weight: 600;
+}
+
